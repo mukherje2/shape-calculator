@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Shape Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div id="banner">
+        <img src="./banner.png" />
+      </div>
+        <div class="content">
+            <div class="welcome">
+                <h2>Welcome to Shape Calculator</h2>
+                <p>Shape Calculator is an interactive web application. To the right you will find the 3 step application. Follow the instructions in each step. Clicking cancel will take you back to step 1. Enjoy!</p>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p>
+            </div>
+            <div class="calculator">
+              <div id="step-1" class="step">
+                <h3>Step 1 : Select your shape</h3>
+                <p>Please select the shape that you would like to calculate the area of and press the button "Go to step 2"</p>
+                <div class="shape-selection">
+                  <input type="radio" id="rectangle" name="shape" value="rectangle">
+                  <label for="rectangle">Rectangle</label><br>
+                  <input type="radio" id="circle" name="shape" value="circle">
+                  <label for="circle">Circle</label><br>
+                  <input type="radio" id="square" name="shape" value="square">
+                  <label for="square">Square</label><br>
+                  <input type="radio" id="ellipse" name="shape" value="ellipse">
+                  <label for="ellipse">Ellipse</label><br><br>
+                </div>
+                <div class="actions">
+                  <button id="goto-step-2" onclick="gotoStep2()">Go to step 2</button>
+                  <a onclick="resetCalculator()">or Cancel</a>
+                </div>
+              </div>
+              <div id="step-2" class="step" style="display: none">
+                <h3>Step 2: Insert your values</h3>
+              </div>
+              <div id="step-3" class="step" style="display: none">
+                <h3>Step 3 : Your results</h3>
+              </div>
+            </div>
+            <div class="advert">
+              <div class="advert__text">
+              120 x 240 Ad<br>
+                (Vertical Banner)
+              </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
+
