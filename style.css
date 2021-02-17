@@ -1,6 +1,6 @@
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 h2 {
@@ -17,7 +17,6 @@ h2 {
 }
 
 .welcome {
-    /* color: #333; */
     width: 40%;
     padding: 0px 40px;
 }

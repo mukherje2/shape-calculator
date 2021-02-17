@@ -56,9 +56,7 @@ function gotoStep2() {
   if (typeof choice == "undefined") {
     alert("Select a shape to proceed.");
   } else {
-    console.log(choice);
     s = sfac.createShape(choice);
-    console.log(s);
     document.getElementById("step-1").style.display = "none";
     var elStep2 = document.getElementById("step-2");
     var elPara = document.createElement("p");
@@ -94,8 +92,6 @@ function gotoStep2() {
 }
 
 function gotoStep3() {
-  console.log("Go to step 3");
-  console.log(s);
   document.getElementById("step-2").style.display = "none";
   var elStep3 = document.getElementById("step-3");
   var ps = document.getElementsByName("parameters");
@@ -114,7 +110,6 @@ function gotoStep3() {
   }
 
   elStep3.appendChild(elPara);
-  elH3.setAttribute("class", "args");
   elH3.setAttribute("class", "emph");
   elStep3.appendChild(elH3);
   var elBtn = document.createElement("button");
